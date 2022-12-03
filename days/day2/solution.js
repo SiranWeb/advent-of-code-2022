@@ -35,7 +35,6 @@ const solutionPart1 = input => {
     let total = 0;
 
     lines.forEach(str => {
-        if (!str) return;
         const [left, right] = str.split(' ');
         const [leftElem, rightElem] = [elements[left], elements[right]];
         if (leftElem === rightElem) {
@@ -88,7 +87,6 @@ const solutionPart2 = input => {
     let total = 0;
 
     lines.forEach(str => {
-        if (!str) return;
         const [left, right] = str.split(' ');
         const [leftElem, result] = [elements[left], results[right]];
         if (result === 'win') {

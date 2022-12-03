@@ -6,6 +6,7 @@ const input = fs.readFileSync(__dirname + '/input.txt', 'utf8');
 
 const solutionPart1 = input => {
     const lines = input.split('\n');
+    lines.push('');
 
     let maxSum = 0;
     let tmpSum = 0;
@@ -23,6 +24,7 @@ const solutionPart1 = input => {
 
 const solutionPart2 = input => {
     const lines = input.split('\n');
+    lines.push('');
 
     const totals = [];
     let tmpSum = 0;
